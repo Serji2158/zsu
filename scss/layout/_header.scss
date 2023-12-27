@@ -1,0 +1,31 @@
+.header {
+	background-color: $secondaru-bg-color;
+	padding: 8px 0;
+}
+
+.position {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: block;
+	text-align: center;
+}
+
+.logo-stand {
+	color: #0075ff;
+}
+
+.logo-Ukraine {
+	color: #ffb800;
+}
+
+.nav {
+	display: none;
+}
+
+.is-open {
+	display: block;
+}

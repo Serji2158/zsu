@@ -21,9 +21,17 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <div class="container position">
       <a href="/" class="logo"> &#35<span class="logo-stand">Stand</span><span>with</span><span class="logo-Ukraine">Ukraine</span> </a>
-      <nav class="nav">
+      <form action="">
+        <label class="burger" for="burger" data-menu-button>
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </form>
+      <nav class="nav" data-menu>
         <ul class="nav-list">
           <li class="nav-item">
             <a href="/" class="nav-item-link">Про збір коштів</a>
@@ -178,5 +186,6 @@
         2022 trips</small>
       </div>
     </footer>
+    <script src="./Js/menu.js"></script>
   </body>
 </html>
