@@ -130,7 +130,7 @@ button {
 .burger input:checked ~ span:nth-of-type(1) {
   transform: rotate(45deg);
   top: 0px;
-  left: 3px;
+  left: 1px;
 }
 
 .burger input:checked ~ span:nth-of-type(2) {
@@ -141,5 +141,52 @@ button {
 .burger input:checked ~ span:nth-of-type(3) {
   transform: rotate(-45deg);
   top: 28px;
-  left: 3px;
+  left: 1px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav.is-open {
+  opacity: 1;
+}
+
+.hero {
+  padding-top: 96px;
+  padding-bottom: 210px;
+  background-image: url("../images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  text-align: center;
+  color: #FFC700;
+}
+
+.hero-title_blue {
+  color: #0075FF;
 }/*# sourceMappingURL=main.css.map */

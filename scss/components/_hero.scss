@@ -1,0 +1,16 @@
+.hero{
+    padding-top: 96px;
+    padding-bottom: 210px;
+    background-image: url('../images/hero-bg.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+.hero-title{
+    text-align: center;
+    color: $hero-title_yellow;
+}
+.hero-title_blue{
+    color: $hero-title_blue;
+}

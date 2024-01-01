@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ЗСУ</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Jost:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container position">
-      <a href="/" class="logo"> &#35<span class="logo-stand">Stand</span><span>with</span><span class="logo-Ukraine">Ukraine</span> </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЗСУ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Jost:wght@400;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container position">
+      <a href="/" class="logo"> &#35<span class="logo-stand">Stand</span><span>with</span><span
+          class="logo-Ukraine">Ukraine</span> </a>
       <form action="">
-        <label class="burger" for="burger" data-menu-button>
+        <label class="burger" for="burger" data-modal-close>
           <input type="checkbox" id="burger">
           <span></span>
           <span></span>
           <span></span>
         </label>
       </form>
-      <nav class="nav" data-menu>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="/" class="nav-item-link">Про збір коштів</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-item-link">Про нас</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-item-link">Пожертвування</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    </header>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <nav class="nav" data-menu>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="/" class="nav-item-link">Про збір коштів</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-item-link">Про нас</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-item-link">Пожертвування</a>
+              </li>
+            </ul>
+          </nav>
 
-    <!-- Main -->
-    <main>
-      <!-- Main section -->
-      <section class="hero">
-        <div class="container">
-        <h1 class="hero-title">Ой у лузі... всім по Бандера смузі</h1>
+
+        </div>
       </div>
-      </section>
+    </div>
+  </header>
 
-      <!-- About fundraising section -->
-      <section class="fundraising">
-        <div class="container">
-        <h2 class="heading" >Про збір коштів</h2>
+  <!-- Main -->
+  <main>
+    <!-- Main section -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title"><span class="hero-title_blue">Ой у лузі...</span> всім по Бандера смузі</h1>
+      </div>
+    </section>
+
+    <!-- About fundraising section -->
+    <section class="fundraising">
+      <div class="container">
+        <h2 class="heading">Про збір коштів</h2>
         <p class="text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
-        <img class="fundraising-img-1" src="./images/zbir-1.jpg" alt="Воєнний зі зброєю"  />
-        <img class="fundraising-img-2"
-          src="./images/zbir-2.jpg"
-          alt="Воєнний зі зброєю та флагом України"
-        />
+        <img class="fundraising-img-1" src="./images/zbir-1.jpg" alt="Воєнний зі зброєю" />
+        <img class="fundraising-img-2" src="./images/zbir-2.jpg" alt="Воєнний зі зброєю та флагом України" />
       </div>
-      </section>
+    </section>
 
-      <!-- About us section -->
-      <section class="about"> 
-        <div class="container">
+    <!-- About us section -->
+    <section class="about">
+      <div class="container">
         <h2 class="heading">Про нас</h2>
-         <p class="text">
+        <p class="text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -87,10 +86,10 @@
         <img class="about-img-1" src="./images/about-1.jpg" alt="Армія України" />
         <img class="about-img-1" src="./images/about-2.jpg" alt="Нашивка Армії України" />
       </div>
-      </section>
-      <!-- Future -->
-      <section class="future">
-        <div class="container">
+    </section>
+    <!-- Future -->
+    <section class="future">
+      <div class="container">
         <h2 class="heading">Якщо ми дуже допоможемо ЗСУ то наша Україно буде така</h2>
         <ul class="future-list">
           <li class="future-item">
@@ -113,10 +112,10 @@
           </li>
         </ul>
       </div>
-      </section>
-      <!-- Project -->
-      <section>
-        <div class="container">
+    </section>
+    <!-- Project -->
+    <section>
+      <div class="container">
         <h2>Проекти пожертвування на ЗСУ</h2>
         <ul>
           <li>
@@ -139,11 +138,11 @@
           </li>
         </ul>
       </div>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <div class="container">
+  <footer>
+    <div class="container">
       <a href="/"> &#35<span>Stand</span><span>with</span><span>Ukraine</span> </a>
       <h3>Политика:</h3>
       <ul>
@@ -156,7 +155,7 @@
       </ul>
       <ul>
         <li>
-          <a href="#" target="_blank"> 
+          <a href="#" target="_blank">
             <svg>
               <use href="icons/symbol-defs.svg#instagram">
               </use>
@@ -164,7 +163,7 @@
           </a>
         </li>
         <li>
-          <a href="#" target="_blank"> 
+          <a href="#" target="_blank">
             <svg>
               <use href="icons/symbol-defs.svg#facebook">
               </use>
@@ -172,7 +171,7 @@
           </a>
         </li>
         <li>
-          <a href="#" target="_blank"> 
+          <a href="#" target="_blank">
             <svg>
               <use href="icons/symbol-defs.svg#twitter">
               </use>
@@ -180,12 +179,13 @@
           </a>
         </li>
       </ul>
-      
+
       <small>
         <span>&#169</span>
         2022 trips</small>
-      </div>
-    </footer>
-    <script src="./Js/menu.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="./Js/menu.js"></script>
+</body>
+
 </html>

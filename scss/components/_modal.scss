@@ -1,0 +1,25 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000033;
+    z-index: 2;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.nav.is-open{
+    opacity: 1;
+}
