@@ -31,6 +31,11 @@ button {
   border: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .header {
   background-color: #010632;
   padding: 8px 0;
@@ -140,7 +145,7 @@ button {
 
 .burger input:checked ~ span:nth-of-type(3) {
   transform: rotate(-45deg);
-  top: 28px;
+  top: 21px;
   left: 1px;
 }
 
@@ -189,4 +194,72 @@ button {
 
 .hero-title_blue {
   color: #0075FF;
+}
+
+.fundraising {
+  background-color: #010632;
+  padding: 21px 27px 8px 27px;
+}
+
+.heading {
+  color: #FFF;
+  font-family: "Istok Web";
+  font-weight: 700;
+  line-height: 1.46;
+}
+
+.text {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.44;
+  margin-bottom: 26px;
+}
+
+.fundraising-img-1 {
+  margin-right: auto;
+  width: 60%;
+  height: 154px;
+}
+
+.fundraising-img-2 {
+  margin-left: auto;
+  width: 55%;
+  height: 109px;
+}
+
+.about {
+  background-color: #060d49;
+  padding: 24px 27px;
+}
+
+.heading {
+  color: #FFF;
+  font-family: "Istok Web";
+  font-weight: 700;
+  line-height: 1.46;
+  padding-top: 43px;
+}
+
+.text {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 1.44;
+  width: 84%;
+}
+
+.about-img-1 {
+  margin-right: auto;
+  width: 60%;
+  height: 124px;
+  margin-bottom: 3px;
+}
+
+.about-img-2 {
+  margin-left: auto;
+  width: 45%;
+  height: 86px;
+}
+
+.heading-box {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+.about {
+    background-color: $primary-bg-color;
+    padding: 24px 27px;
+}
+.heading {
+    color: $primary-text-color;
+    font-family: "Istok Web";
+    font-weight: 700;
+    line-height: 1.46;
+    padding-top: 43px;
+
+}
+.text {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.44;
+    width: 84%;
+}
+.about-img-1 {
+    margin-right: auto;
+    width: 60%;
+    height: 124px;
+    margin-bottom: 3px;
+}
+.about-img-2 {
+    margin-left: auto;
+    width: 45%;
+    height: 86px;
+}
+.heading-box {
+    display: flex;
+}
