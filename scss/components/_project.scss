@@ -1,0 +1,25 @@
+.project{
+    background-color: $primary-bg-color;
+}
+.item-card{
+    width: 80%;
+
+background-color:$card-bg-color ;
+padding: 19px 11px 14px 11px ;
+margin: 0 auto;
+}
+.item-card + .item-card{
+    margin-top: 25px;
+}
+.title-card{
+    text-align: center;
+}
+.text-card{
+    text-align: center;
+    font-size: 16px;
+}
+.btn-card{
+    display: block;
+    margin: 0 auto;
+
+}
