@@ -272,7 +272,7 @@ img {
 
 .heading {
   text-align: center;
-  font-family: Istok Web;
+  font-family: "Istok Web";
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -289,11 +289,11 @@ img {
   position: absolute;
   content: "";
   display: block;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: 55px;
+  left: 71px;
+  width: 70%;
   height: 4px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .future-item {
@@ -302,8 +302,8 @@ img {
 
 .future-item:nth-child(2) {
   top: 115px;
-  width: 240px;
-  height: 244px;
+  left: 71px;
+  width: 140px;
 }
 
 .future-item:nth-child(5),
@@ -313,26 +313,25 @@ img {
 
 .future-item:nth-child(1) {
   top: 115px;
-  left: 297px;
-  width: 234px;
-  height: 318px;
+  left: 267px;
+  width: 145px;
 }
 
 .future-item:nth-child(4) {
-  top: 385px;
-  width: 218px;
-  height: 297px;
+  top: 303px;
+  left: 69px;
+  width: 140px;
 }
 
 .future-item:nth-child(6) {
-  top: 384px;
-  left: 291px;
-  width: 240px;
-  height: 218px;
+  top: 387px;
+  left: 261px;
+  width: 145px;
 }
 
 .project {
   background-color: #060d49;
+  padding-bottom: 65px;
 }
 
 .item-card {
@@ -353,9 +352,60 @@ img {
 .text-card {
   text-align: center;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .btn-card {
   display: block;
   margin: 0 auto;
+  width: 179px;
+  height: 43px;
+  border-radius: 15px;
+  background: #0057ff;
+  color: #FFF;
+}
+
+footer {
+  background-color: #010632;
+  color: #FFF;
+  font-family: "Istok Web";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.logo-footer {
+  font-size: 30px;
+}
+
+.policy-list,
+.footer-title {
+  padding-left: 35px;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+}
+
+.policy-list {
+  padding-bottom: 10px;
+}
+
+.policy-link:hover,
+.policy-link:focus {
+  color: #FFC700;
+}
+
+.list-contact {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.item-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFC700;
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=main.css.map */
