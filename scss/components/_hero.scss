@@ -1,16 +1,22 @@
-.hero{
-    padding-top: 96px;
-    padding-bottom: 210px;
-    background-image: url('../images/hero-bg.png');
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
-
+.hero {
+  padding-top: 96px;
+  padding-bottom: 210px;
+  background-image: url("../images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    padding-top: 115px;
+    padding-bottom: 320px;
+  }
 }
-.hero-title{
-    text-align: center;
-    color: $hero-title_yellow;
+.hero-title {
+  text-align: center;
+  color: $hero-title_yellow;
+  @media screen and (min-width: 1200px) {
+    font-size: 96px;
+  }
 }
-.hero-title_blue{
-    color: $hero-title_blue;
+.hero-title_blue {
+  color: $hero-title_blue;
 }

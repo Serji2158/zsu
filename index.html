@@ -29,9 +29,22 @@
           <span></span>
         </label>
       </form>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="/" class="navigation-item-link">Про збір коштів</a>
+          </li>
+          <li class="navigation-item">
+            <a href="/" class="navigation-item-link">Про нас</a>
+          </li>
+          <li class="navigation-item">
+            <a href="/" class="navigation-item-link">Пожертвування</a>
+          </li>
+        </ul>
+      </nav>
       <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
-          <nav class="nav" data-menu>
+          <div class="nav" data-menu>
             <ul class="nav-list">
               <li class="nav-item">
                 <a href="/" class="nav-item-link">Про збір коштів</a>
@@ -43,9 +56,7 @@
                 <a href="/" class="nav-item-link">Пожертвування</a>
               </li>
             </ul>
-          </nav>
-
-
+          </div>
         </div>
       </div>
     </div>
@@ -56,19 +67,21 @@
     <!-- Main section -->
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title"><span class="hero-title_blue">Ой у лузі...</span> всім по Бандера смузі</h1>
+        <h1 class="hero-title"><span class="hero-title_blue">Ой у лузі...</span><br> всім по Бандера смузі</h1>
       </div>
     </section>
 
     <!-- About fundraising section -->
     <section class="fundraising">
-      <div class="container">
-        <h2 class="heading">Про збір коштів</h2>
-        <p class="text">
+      <div class="container fundraising-position">
+        <div class="fund-content">
+          <h2 class="fund-title">Про збір коштів</h2>
+          <p class="text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
-        </p>
+          </p>
+      </div>
 
         <img class="fundraising-img-1" src="./images/zbir-1.jpg" alt="Воєнний зі зброєю" />
         <img class="fundraising-img-2" src="./images/zbir-2.jpg" alt="Воєнний зі зброєю та флагом України" />
@@ -77,10 +90,10 @@
 
     <!-- About us section -->
     <section class="about">
-      <div class="container">
+      <div class="container ">
         <img class="about-img-1" src="./images/about-1.jpg" alt="Армія України" />
         <div class="heading-box">
-          <h2 class="heading">Про нас</h2>
+          <h2 class="fund-title">Про нас</h2>
           <img class="about-img-2" src="./images/about-2.jpg" alt="Нашивка Армії України" />
         </div>
 
@@ -169,7 +182,7 @@
         </li>
         <li class="item-contact">
           <a href="#" target="_blank">
-            <svg class="social-icon" width="34" height="42">
+            <svg class="social-icon" width="46" height="42">
               <use href="icons/symbol-defs.svg#icon-facebook">
               </use>
             </svg>

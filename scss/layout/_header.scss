@@ -1,31 +1,57 @@
 .header {
-	background-color: $secondary-bg-color;
-	padding: 8px 0;
+  background-color: $secondary-bg-color;
+  padding: 8px 0;
 }
 
 .position {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
 }
 
 .logo-stand {
-	color: #0075ff;
+  color: #0075ff;
 }
 
 .logo-Ukraine {
-	color: #ffb800;
+  color: #ffb800;
 }
 
 .nav {
-	display: none;
+  display: none;
 }
 
 .is-open {
-	display: block;
+  display: block;
+}
+
+.navigation {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  .navigation-list {
+    display: flex;
+    column-gap: 20px;
+
+    .navigation-item {
+    }
+    .navigation-item-link {
+      &:hover,
+      &:focus {
+        color: $hero-title_yellow;
+      }
+    }
+  }
 }

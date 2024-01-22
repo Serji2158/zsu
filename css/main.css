@@ -51,6 +51,11 @@ img {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 48px;
+  }
+}
 
 .logo-stand {
   color: #0075ff;
@@ -66,6 +71,23 @@ img {
 
 .is-open {
   display: block;
+}
+
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: block;
+  }
+}
+.navigation .navigation-list {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.navigation .navigation-list .navigation-item-link:hover, .navigation .navigation-list .navigation-item-link:focus {
+  color: #FFC700;
 }
 
 .container {
@@ -96,6 +118,11 @@ img {
   background: transparent;
   cursor: pointer;
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .burger {
+    display: none;
+  }
 }
 
 .burger input {
@@ -186,10 +213,21 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 115px;
+    padding-bottom: 320px;
+  }
+}
 
 .hero-title {
   text-align: center;
   color: #FFC700;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 96px;
+  }
 }
 
 .hero-title_blue {
@@ -227,6 +265,34 @@ img {
   height: 109px;
 }
 
+.fund-title {
+  text-align: center;
+  font-family: "Istok Web";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.43;
+  margin-bottom: 25px;
+  color: #FFF;
+}
+
+@media screen and (min-width: 1200px) {
+  .fundraising-position {
+    display: flex;
+  }
+  .fund-content {
+    width: 414px;
+  }
+  .fund-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 24px;
+  }
+}
 .about {
   background-color: #060d49;
   padding: 24px 27px;
@@ -387,7 +453,7 @@ footer {
 }
 
 .policy-list {
-  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .policy-link:hover,
@@ -405,7 +471,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFC700;
   width: 50px;
   height: 50px;
+}
+
+.social-icon {
+  fill: #FFC700;
+}
+
+.confidential {
+  display: block;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
