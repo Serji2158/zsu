@@ -43,6 +43,11 @@ img {
   max-width: 100%;
 }
 
+section, header, footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #010632;
   padding: 8px 0;
@@ -335,7 +340,8 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   .text {
-    width: none;
+    width: 100%;
+    margin-bottom: 0;
     font-size: 24px;
   }
 }
@@ -387,6 +393,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .fundraising-position {
     display: flex;
+    justify-content: space-between;
   }
   .fund-content {
     width: 414px;
@@ -396,6 +403,14 @@ footer {
   background-color: #060d49;
   padding: 24px 27px;
 }
+@media screen and (min-width: 1200px) {
+  .about-position {
+    display: flex;
+    -moz-column-gap: 75px;
+         column-gap: 75px;
+  }
+}
+
 .heading {
   /*   padding-top: 43px; */
 }
@@ -406,6 +421,13 @@ footer {
   line-height: 1.44;
   width: 65%;
 }
+@media screen and (min-width: 1200px) {
+  .text-about {
+    font-size: 24px;
+    text-align: justify;
+    width: 100%;
+  }
+}
 
 .about-img-1 {
   margin-right: auto;
@@ -413,19 +435,40 @@ footer {
   height: 124px;
   margin-bottom: 3px;
 }
+@media screen and (min-width: 1200px) {
+  .about-img-1 {
+    margin-bottom: auto;
+    width: auto;
+    height: auto;
+  }
+}
 
 .about-img-2 {
   margin-left: auto;
   width: 45%;
   height: 86px;
 }
-
-.heading-box {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .about-img-2 {
+    margin-top: auto;
+    margin-left: 25px;
+    width: auto;
+    height: auto;
+  }
 }
 
-#about-us {
-  padding-top: 48px;
+@media screen and (min-width: 1200px) {
+  .img-box {
+    width: 665px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading-box {
+    width: 415px;
+    padding: 20px 0;
+  }
 }
 
 .future {

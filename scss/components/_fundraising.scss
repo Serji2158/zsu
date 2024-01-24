@@ -17,7 +17,8 @@
   color: $primary-text-color;
 
   @media screen and (min-width: 1200px) {
-    width: none;
+    width: 100%;
+    margin-bottom: 0;
     font-size: 24px;
   }
 }
@@ -63,6 +64,7 @@
 @media screen and (min-width: 1200px) {
   .fundraising-position {
     display: flex;
+    justify-content: space-between;
   }
 
   .fund-content {
