@@ -5,6 +5,13 @@ body {
   line-height: 1.4;
 }
 
+.heading {
+  color: #FFF;
+  font-family: "Istok Web";
+  font-weight: 700;
+  line-height: 1.46;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -53,7 +60,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .logo {
+    font-family: "Istok Web";
     font-size: 48px;
+    font-weight: 700;
   }
 }
 
@@ -107,8 +116,81 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1160px;
+    max-width: 1440px;
+    padding: 0 137px;
   }
+}
+
+footer {
+  background-color: #010632;
+  color: #FFF;
+  font-family: "Istok Web";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.logo-footer {
+  font-size: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+
+.policy-list,
+.footer-title {
+  padding-left: 35px;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+}
+
+.policy-list {
+  margin-bottom: 30px;
+}
+
+.policy-link,
+.footer-title {
+  font-weight: 400;
+  font-size: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .policy-link,
+  .footer-title {
+    font-size: 24px;
+    font-family: Jost;
+  }
+}
+
+.policy-link:hover,
+.policy-link:focus {
+  color: #FFC700;
+}
+
+.list-contact {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.item-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.social-icon {
+  fill: #FFC700;
+}
+
+.confidential {
+  display: block;
+  text-align: center;
 }
 
 .burger {
@@ -235,45 +317,71 @@ img {
 }
 
 .fundraising {
-  background-color: #010632;
   padding: 21px 27px 8px 27px;
+  background-color: #010632;
 }
-
-.heading {
-  color: #FFF;
-  font-family: "Istok Web";
-  font-weight: 700;
-  line-height: 1.46;
+@media screen and (min-width: 1200px) {
+  .fundraising {
+    padding: 32px 0 63px;
+  }
 }
 
 .text {
-  color: #FFF;
+  width: 70%;
+  margin-bottom: 26px;
   font-size: 16px;
   line-height: 1.44;
-  margin-bottom: 26px;
+  color: #FFF;
+}
+@media screen and (min-width: 1200px) {
+  .text {
+    width: none;
+    font-size: 24px;
+  }
 }
 
 .fundraising-img-1 {
-  margin-right: auto;
   width: 60%;
   height: 154px;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .fundraising-img-1 {
+    width: 365px;
+    height: 251px;
+    margin-right: 0;
+  }
 }
 
 .fundraising-img-2 {
-  margin-left: auto;
   width: 55%;
   height: 109px;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .fundraising-img-2 {
+    align-self: flex-end;
+    width: 265px;
+    height: 203px;
+    margin-left: 0;
+  }
 }
 
 .fund-title {
-  text-align: center;
+  margin-bottom: 10px;
   font-family: "Istok Web";
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: 1.43;
-  margin-bottom: 25px;
   color: #FFF;
+}
+@media screen and (min-width: 1200px) {
+  .fund-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -283,34 +391,20 @@ img {
   .fund-content {
     width: 414px;
   }
-  .fund-title {
-    text-align: left;
-    font-weight: 700;
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-  .text {
-    font-size: 24px;
-  }
 }
 .about {
   background-color: #060d49;
   padding: 24px 27px;
 }
-
 .heading {
-  color: #FFF;
-  font-family: "Istok Web";
-  font-weight: 700;
-  line-height: 1.46;
-  padding-top: 43px;
+  /*   padding-top: 43px; */
 }
 
-.text {
+.text-about {
   color: #FFF;
   font-size: 16px;
   line-height: 1.44;
-  width: 84%;
+  width: 65%;
 }
 
 .about-img-1 {
@@ -330,6 +424,10 @@ img {
   display: flex;
 }
 
+#about-us {
+  padding-top: 48px;
+}
+
 .future {
   background-color: #010632;
   position: relative;
@@ -344,6 +442,11 @@ img {
   font-weight: 300;
   line-height: 1.43;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    font-size: 48px;
+  }
 }
 
 .future-list {
@@ -402,9 +505,9 @@ img {
 
 .item-card {
   width: 80%;
-  background-color: #fff;
   padding: 19px 11px 14px 11px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .item-card + .item-card {
@@ -416,9 +519,14 @@ img {
 }
 
 .text-card {
+  margin-bottom: 15px;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .text-card {
+    font-size: 24px;
+  }
 }
 
 .btn-card {
@@ -431,55 +539,16 @@ img {
   color: #FFF;
 }
 
-footer {
-  background-color: #010632;
-  color: #FFF;
-  font-family: "Istok Web";
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.logo-footer {
-  font-size: 30px;
-}
-
-.policy-list,
-.footer-title {
-  padding-left: 35px;
-}
-
-.footer-title {
-  margin-bottom: 10px;
-}
-
-.policy-list {
-  margin-bottom: 30px;
-}
-
-.policy-link:hover,
-.policy-link:focus {
-  color: #FFC700;
-}
-
-.list-contact {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
-
-.item-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-}
-
-.social-icon {
-  fill: #FFC700;
-}
-
-.confidential {
-  display: block;
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  #donation {
+    margin-bottom: 65px;
+  }
+  .list-card {
+    display: flex;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+  }
+  .list-card .item-card {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

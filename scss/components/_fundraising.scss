@@ -1,39 +1,63 @@
 .fundraising {
-  background-color: $secondary-bg-color;
   padding: 21px 27px 8px 27px;
+  background-color: $secondary-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0 63px;
+  }
 }
 .heading {
-  color: $primary-text-color;
-  font-family: "Istok Web";
-  font-weight: 700;
-  line-height: 1.46;
+  @extend %about-text;
 }
 .text {
-  color: $primary-text-color;
+  width: 70%;
+  margin-bottom: 26px;
   font-size: 16px;
   line-height: 1.44;
-  margin-bottom: 26px;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    width: none;
+    font-size: 24px;
+  }
 }
 .fundraising-img-1 {
-  margin-right: auto;
   width: 60%;
   height: 154px;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 365px;
+    height: 251px;
+    margin-right: 0;
+  }
 }
 .fundraising-img-2 {
-  margin-left: auto;
   width: 55%;
   height: 109px;
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    align-self: flex-end;
+    width: 265px;
+    height: 203px;
+    margin-left: 0;
+  }
 }
 
 .fund-title {
-  text-align: center;
+  margin-bottom: 10px;
   font-family: "Istok Web";
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: 1.43;
-  margin-bottom: 25px;
   color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    font-weight: 700;
+    font-size: 48px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -43,16 +67,5 @@
 
   .fund-content {
     width: 414px;
-  }
-
-  .fund-title {
-    text-align: left;
-    font-weight: 700;
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-
-  .text {
-    font-size: 24px;
   }
 }

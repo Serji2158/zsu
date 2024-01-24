@@ -1,32 +1,49 @@
-.project{
-    background-color: $primary-bg-color;
-    padding-bottom: 65px;
+.project {
+  background-color: $primary-bg-color;
+  padding-bottom: 65px;
 }
-.item-card{
-    width: 80%;
+.item-card {
+  width: 80%;
+  padding: 19px 11px 14px 11px;
+  margin: 0 auto;
+  background-color: $card-bg-color;
+}
+.item-card + .item-card {
+  margin-top: 25px;
+}
+.title-card {
+  text-align: center;
+}
+.text-card {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
 
-background-color:$card-bg-color ;
-padding: 19px 11px 14px 11px ;
-margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
-.item-card + .item-card{
-    margin-top: 25px;
+.btn-card {
+  display: block;
+  margin: 0 auto;
+  width: 179px;
+  height: 43px;
+  border-radius: 15px;
+  background: $button-bg-color;
+  color: $primary-text-color;
 }
-.title-card{
-    text-align: center;
-}
-.text-card{
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 15px;
-   
-}
-.btn-card{
-    display: block;
-    margin: 0 auto;
-width: 179px;
-height: 43px;
-border-radius: 15px;
-background: $button-bg-color;
- color: $primary-text-color;
+
+@media screen and (min-width: 1200px) {
+  #donation {
+    margin-bottom: 65px;
+  }
+
+  .list-card {
+    display: flex;
+    column-gap: 35px;
+
+    .item-card {
+      margin-top: 0;
+    }
+  }
 }

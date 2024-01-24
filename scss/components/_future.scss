@@ -11,6 +11,10 @@
   font-weight: 300;
   line-height: 1.43;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
 }
 .future-list {
   display: flex;
@@ -18,14 +22,14 @@
   flex-wrap: wrap;
 }
 .future-list::after {
-    position: absolute;
-    content: "";
-    display: block;
-    bottom: 55px;
-    left: 71px;
-    width: 70%;
-    height: 4px;
-    background-color: #fff;
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 55px;
+  left: 71px;
+  width: 70%;
+  height: 4px;
+  background-color: #fff;
 }
 .future-item {
   position: absolute;
